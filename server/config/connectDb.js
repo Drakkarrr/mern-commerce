@@ -2,11 +2,7 @@ import mongooes from 'mongoose';
 
 const connectDB = async () => {
   try {
-    const conn = await mongooes.connect(process.env.MONGO_URI, {
-      useUnifiedTopology: true,
-      useNewUrlParser: true,
-      useCreateIndex: true,
-    });
+    const conn = await mongooes.connect(process.env.MONGO_URI);
 
     console.log(`MongoDb connected: ${conn.connection.host}`);
   } catch (error) {
@@ -14,3 +10,5 @@ const connectDB = async () => {
     process.exit(1);
   }
 };
+
+export default connectDB;
