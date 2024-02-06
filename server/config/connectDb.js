@@ -1,6 +1,6 @@
 import mongooes from 'mongoose';
 
-const connectDb = async () => {
+const connectDB = async () => {
   try {
     const conn = await mongooes.connect(process.env.MONGO_URI, {
       useUnifiedTopology: true,
