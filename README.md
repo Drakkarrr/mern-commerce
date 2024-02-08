@@ -1,1 +1,1 @@
-MERN STACK e-commerce tutorial HuxN Webdev
+MERN STACK MASTERY e-commerce tutorial HuxN Webdev
